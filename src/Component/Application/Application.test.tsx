@@ -4,7 +4,8 @@ import { Application } from "./Application";
 describe("Application", () => {
   test("render correctly", () => {
     render(<Application />);
-    const inputElement = screen.getAllByRole("textbox");
+    const inputElement = screen.getByPlaceholderText("Fullname");
     expect(inputElement).toBeInTheDocument();
   });
+ 
 });

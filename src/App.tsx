@@ -2,11 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Application } from "./Component/Application/Application";
+import { Counter } from "./Component/Counter/Counter";
+import Users from "./Component/Users/Users";
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -20,8 +22,10 @@ function App() {
           learn react
         </a>
       </header>
-      <table></table> */}
+      <table></table>
       <Application />
+      <Counter />
+      <Users />
     </div>
   );
 }
